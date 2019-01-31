@@ -1,0 +1,25 @@
+extends nav
+
+block main-content
+	h4 This webpage generates a random pattern upon refreshing.
+	h5 Input a random integer value less than 4,611,237 for a random palette.
+	hr
+	a(href="/landing")
+		button(type="button") Refresh Pattern
+	a(href="/tweet")
+		h2 #{color.title}
+			img(src="/images/twitter.png", class="tIcon")
+	div
+		img.imgClass(src=color.imageUrl)
+		ul.listClass
+			each item in color.colors
+				li
+					.block(style=`background-color: #${item}`)
+	form#hex-form
+		input#hex(type="text", placeholder="integer Value < Million")
+		button(type="submit") Submit
+	script(src="/js/submit.js")
+	script(src="/js/browser.js")
+
+
+

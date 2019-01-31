@@ -1,0 +1,22 @@
+{
+  "name": "finalProj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cameron olson",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "pug": "^2.0.3",
+    "request": "^2.88.0",
+    "twitter": "^1.7.1",
+    "xml-js": "^1.6.8"
+  }
+}

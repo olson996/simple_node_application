@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	nav.navbar.navbar-expand-lg.navbar-light.bg-light
+		a.navbar-brand(href="#") COLOURIZED
+		.collapse.navbar-collapse#navbarNav
+			ul.navbar-nav
+				li.nav-item.active
+					a.nav-link(href="/landing") Home 
+						span.sr-only (current)
+				li.nav-item
+					a.nav-link(href="/documentation") Documentation
+				li.nav-item
+					a.nav-link(href="http://www.colourlovers.com") ColourLovers
+	.section
+		.container
+			.mainblock
+				block main-content
